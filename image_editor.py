@@ -1,23 +1,5 @@
 import streamlit as st
 from PIL import Image , ImageFilter
-
-# Background for stremlit app
-def set_background_image(image_url):
-    st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-image: url("{image_url}");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed; /* Keeps image fixed when scrolling */
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-set_background_image("https://static.vecteezy.com/system/resources/previews/000/123/623/non_2x/free-digital-photo-vector-illustration.jpg")
-
 # create the heading
 st.markdown("<h1 style='text-align: center;'> Image Editor </h1>" , unsafe_allow_html=True)
 st.markdown("---")
